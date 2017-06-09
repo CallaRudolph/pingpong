@@ -5,6 +5,13 @@ function play(input) {
     $("#NaN").show();
   }
 
+  if (input <= 14) {
+    $("#small").show();
+  } else {
+    $("#small").hide();
+    $("#big").show();
+  }
+
   var total = []
   for (var i = 1; i <= input; i += 1) {
     $("#NaN").hide();
