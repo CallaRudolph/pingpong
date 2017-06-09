@@ -22,7 +22,10 @@ function play(input) {
   }
   return total
 }
+var $li = $('.items li');
 
+for (var i = 0; i < $li.length; i+=3)
+    $li.slice(i, i+3).wrapAll('<li><ul></ul></li>');
 // user interface here:
 $(document).ready(function() {
   $("form#pingpong").submit(function(event) {

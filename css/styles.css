@@ -1,3 +1,9 @@
+body {
+  background-color: #036d4c;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
 #NaN {
   display: none;
 }
@@ -8,13 +14,34 @@
   margin-top: 5px;
   background: url(../images/jumbo.jpeg);
   color: white;
-  text-shadow: 2px 2px black;
+  text-shadow: 3px 3px black;
 }
 
 #sidebar {
   float: left;
   width: 30%;
   text-align: left;
-  margin-right: 100px;
-  border: 2px solid black;
+  margin-right: 75px;
+  border: 1.5px solid black;
+  padding-left: 10px;
+  word-wrap: break-word;
+  background-color: #ffe6cc;
+  color: black;
+  text-shadow: none;
+}
+
+#number {
+  color: black;
+}
+
+.btn {
+  background-color: black;
+  border-radius: 8px;
+  padding: 4px;
+  font-size: 14px;
+  color: white;
+}
+
+#result {
+  float: left;
 }
