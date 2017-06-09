@@ -1,10 +1,14 @@
 //business logic here:
 
 function play(input) {
-  var total = []
 
+  if (isNaN(input)) {
+    $("#NaN").show();
+  }
+
+  var total = []
   for (var i = 1; i <= input; i += 1) {
-    console.log(total)
+    $("#NaN").hide();
     total.push("<li>" + i + "</li>");
     if ((i % 15) === 0) {
       total.pop(i)
@@ -19,11 +23,6 @@ function play(input) {
   }
   return total
 }
-    // var fifteen = false;
-    // console.log(fifteen)
-    // if ((input[i] % 15) === 0) {
-    //   fifteen = true;
-    // } else {
 
 
 // user interface here:
@@ -32,8 +31,6 @@ $(document).ready(function() {
     event.preventDefault();
     var input = parseInt($("input#number").val());
     var result = play(input);
-
-    // console.log(input)
     $("ul#result").empty();
     $("ul#result").prepend(result);
   });
