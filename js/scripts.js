@@ -16,7 +16,7 @@ $(document).ready(function() {
     var result = play(input);
 
     // console.log(input)
-
-    $("ul#result").append(result);
+    $("ul#result").empty();
+    $("ul#result").prepend(result);
   });
 });
