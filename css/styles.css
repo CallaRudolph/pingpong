@@ -4,8 +4,18 @@ body {
   text-shadow: 1px 1px black;
 }
 
-#NaN {
+#bean {
+  float: auto;
+  width: 50%;
+}
+
+#nan {
   display: none;
+}
+
+#nan img {
+  float: auto;
+  width: 40%
 }
 
 #small {
