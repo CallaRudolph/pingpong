@@ -18,6 +18,12 @@ body {
   width: 40%
 }
 
+#zero {
+  display: none;
+  float: auto;
+  width: 40%
+}
+
 #small {
   display: none;
   float: right;

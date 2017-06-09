@@ -2,6 +2,7 @@
 function play(input) {
 
   if (isNaN(input)) {
+    $("#zero").hide();
     $("#big").hide();
     $("#small").hide();
     $("#nan").show();
@@ -9,11 +10,17 @@ function play(input) {
   console.log(input);
 
   if (input > 0 && input <= 14) {
+    $("#zero").hide();
     $("#big").hide();
     $("#small").show();
   } else if (input > 14) {
+    $("#zero").hide();
     $("#small").hide();
     $("#big").show();
+  } else if (input === 0) {
+    $("#big").hide();
+    $("#small").hide();
+    $("#zero").show();
   }
 
   var total = []
