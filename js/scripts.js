@@ -28,6 +28,7 @@ $(document).ready(function() {
     $("#bean").hide();
     $(".pics").hide();
     $("ul#result").empty();
+    $("ul#result").prepend(result);
 
     if (input > 0 && input <= 14) {
       $("#small").show();
@@ -38,7 +39,6 @@ $(document).ready(function() {
     } else if (isNaN(input)) {
       $("#nan").show();
     }
-
-    $("ul#result").prepend(result);
+    
   });
 });
