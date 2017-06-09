@@ -2,11 +2,24 @@
 
 function play(input) {
   var total = []
+
   for (var i = 1; i <= input; i += 1) {
+    console.log(total)
     total.push("<li>" + i + "</li>");
-  }
+    if ((i % 5) === 0) {
+      total.pop(i)
+      total.push("<li>" + "ping-pong" + "</li>");
+    }
+    }
   return total
+
 }
+    // var fifteen = false;
+    // console.log(fifteen)
+    // if ((input[i] % 15) === 0) {
+    //   fifteen = true;
+    // } else {
+
 
 // user interface here:
 $(document).ready(function() {
