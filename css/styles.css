@@ -1,3 +1,20 @@
 #NaN {
   display: none;
 }
+
+.jumbotron{
+  padding: 12px;
+  padding-bottom: 20px;
+  margin-top: 5px;
+  background: url(../images/jumbo.jpeg);
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+#sidebar {
+  float: left;
+  width: 30%;
+  text-align: left;
+  margin-right: 100px;
+  border: 2px solid black;
+}
