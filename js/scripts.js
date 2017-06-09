@@ -3,8 +3,6 @@ function play(input) {
 
   var total = []
   for (var i = 1; i <= input; i += 1) {
-    $("#nan").hide();
-    // var answer = ["<li>" + i + "</li>"]
     total.push("<li>" + i + "</li>");
     if ((i % 15) === 0) {
       total.pop(i)
@@ -31,16 +29,16 @@ $(document).ready(function() {
     $(".pics").hide();
     $("ul#result").empty();
 
-    if (isNaN(input)) {
-      $("#nan").show();
-    } else if (input > 0 && input <= 14) {
+    if (input > 0 && input <= 14) {
       $("#small").show();
     } else if (input > 14) {
       $("#big").show();
     } else if (input === 0) {
       $("#zero").show();
+    } else if (isNaN(input)) {
+      $("#nan").show();
     }
-    
+
     $("ul#result").prepend(result);
   });
 });

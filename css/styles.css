@@ -6,7 +6,7 @@ body {
 
 #bean {
   float: auto;
-  width: 50%;
+  width: 40%;
 }
 
 .pics {
@@ -19,19 +19,19 @@ body {
 
 #nan img {
   float: auto;
-  width: 40%
+  width: 40%;
 }
 
 #zero {
   display: none;
   float: auto;
-  width: 40%
+  width: 40%;
 }
 
 #small {
   display: none;
   float: right;
-  width: 30%
+  width: 30%;
 }
 
 #big {
@@ -77,4 +77,11 @@ body {
 #result {
   float: left;
   font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  color: lightgrey;
+  text-shadow: none;
+  position: sticky;
 }
