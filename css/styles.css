@@ -9,6 +9,10 @@ body {
   width: 50%;
 }
 
+.pics {
+  display: none;
+}
+
 #nan {
   display: none;
 }
@@ -72,4 +76,5 @@ body {
 
 #result {
   float: left;
+  font-size: 16px;
 }
