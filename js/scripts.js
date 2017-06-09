@@ -1,5 +1,4 @@
 //business logic here:
-
 function play(input) {
 
   if (isNaN(input)) {
@@ -23,7 +22,6 @@ function play(input) {
   }
   return total
 }
-
 
 // user interface here:
 $(document).ready(function() {
