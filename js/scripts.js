@@ -8,6 +8,7 @@ function play(input) {
   var total = []
   for (var i = 1; i <= input; i += 1) {
     $("#NaN").hide();
+    // var answer = ["<li>" + i + "</li>"]
     total.push("<li>" + i + "</li>");
     if ((i % 15) === 0) {
       total.pop(i)
@@ -22,10 +23,7 @@ function play(input) {
   }
   return total
 }
-var $li = $('.items li');
 
-for (var i = 0; i < $li.length; i+=3)
-    $li.slice(i, i+3).wrapAll('<li><ul></ul></li>');
 // user interface here:
 $(document).ready(function() {
   $("form#pingpong").submit(function(event) {
