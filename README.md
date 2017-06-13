@@ -10,21 +10,21 @@ _This project utilizes looping and arrays to scan through an inputted number and
 
 ## Specifications
 
-* It can count up to the provided number.
-  * Example Input: 2
-  * Example Output: [1, 2]
 * It returns an error if something other than a number is inputted.
   * Example Input: $
   * Example Output: 'Please enter a number'
-* It returns any number in the count that is divisible by 15 with 'ping-pong'.
-  * Example Input: 15
-  * Example Output: 'ping-pong'
+* It can count up to the provided number.
+  * Example Input: 2
+  * Example Output: [1, 2]
 * It returns any number in the count that is divisible by 3 with 'ping'.
   * Example Input: 3
-  * Example Output: 'ping'
+  * Example Output: [1, 2, ping]
 * It returns any number in the count that is divisible by 5 with 'pong'.
   * Example Input: 5
-  * Example Output: 'pong'
+  * Example Output: [1, 2, ping, 4, pong]
+* It returns any number in the count that is divisible by 15 with 'ping-pong'.
+  * Example Input: 15
+  * Example Output: [1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong]
 
 ## Setup/Installation Requirements
 
