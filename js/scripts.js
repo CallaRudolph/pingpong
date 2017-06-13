@@ -3,16 +3,16 @@ function play(input) {
 
   var total = []
   for (var i = 1; i <= input; i += 1) {
-    total.push("<li>" + i + "</li>");
+    total.push(i);
     if ((i % 15) === 0) {
       total.pop(i)
-      total.push("<li>" + "ping-pong" + "</li>");
+      total.push("ping-pong");
     } else if ((i % 5) === 0) {
       total.pop(i)
-      total.push("<li>" + "pong" + "</li>");
+      total.push("pong");
     } else if ((i % 3) === 0) {
       total.pop(i)
-      total.push("<li>" + "ping" + "</li>");
+      total.push("ping");
     }
   }
   return total
@@ -25,10 +25,9 @@ $(document).ready(function() {
     var input = parseInt($("input#number").val());
     var result = play(input);
 
-    $("#bean").hide();
-    $(".pics").hide();
-    $("ul#result").empty();
-    $("ul#result").prepend(result);
+    var list = result.map(function(item) {
+      return ("<li>" + item + "</li>")
+    })
 
     if (input > 0 && input <= 14) {
       $("#small").show();
@@ -39,6 +38,11 @@ $(document).ready(function() {
     } else if (isNaN(input)) {
       $("#nan").show();
     }
-    
+
+    $("#bean").hide();
+    $(".pics").hide();
+    $("ul#result").empty();
+    $("ul#result").prepend(list);
+
   });
 });
