@@ -25,6 +25,9 @@ $(document).ready(function() {
     var input = parseInt($("input#number").val());
     var result = play(input);
 
+    $("#bean").hide();
+    $(".pics").hide();
+
     var list = result.map(function(item) {
       return ("<li>" + item + "</li>")
     })
@@ -39,8 +42,6 @@ $(document).ready(function() {
       $("#nan").show();
     }
 
-    $("#bean").hide();
-    $(".pics").hide();
     $("ul#result").empty();
     $("ul#result").prepend(list);
 
