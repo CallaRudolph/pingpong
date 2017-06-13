@@ -1,14 +1,8 @@
 //business logic here:
 function play(input) {
 
-  if (isNaN(input)) {
-    $("#NaN").show();
-  }
-
   var total = []
   for (var i = 1; i <= input; i += 1) {
-    $("#NaN").hide();
-    // var answer = ["<li>" + i + "</li>"]
     total.push("<li>" + i + "</li>");
     if ((i % 15) === 0) {
       total.pop(i)
@@ -30,7 +24,21 @@ $(document).ready(function() {
     event.preventDefault();
     var input = parseInt($("input#number").val());
     var result = play(input);
+
+    $("#bean").hide();
+    $(".pics").hide();
     $("ul#result").empty();
     $("ul#result").prepend(result);
+
+    if (input > 0 && input <= 14) {
+      $("#small").show();
+    } else if (input > 14) {
+      $("#big").show();
+    } else if (input === 0) {
+      $("#zero").show();
+    } else if (isNaN(input)) {
+      $("#nan").show();
+    }
+    
   });
 });
