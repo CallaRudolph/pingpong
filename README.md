@@ -6,7 +6,15 @@
 
 ## Description
 
-_This project utilizes looping and arrays to scan through an inputted number and return a counted list up to that inputted number. There are several specs included to determine when to replace part of the count with 'ping', 'pong', or 'ping-pong'._
+_This project utilizes looping, arrays, and mapping to scan through an inputted number and return a counted list up to that inputted number. There are several specs included to determine when to replace part of the count with 'ping', 'pong', or 'ping-pong'. There are several picture results that will display depending on what the user inputs._
+
+![Home Page](images/home.png)
+
+![Results](images/results.png)
+
+![Zero Entry](images/0.png)
+
+![NaN Entry](images/NAN.png)
 
 ## Specifications
 
@@ -31,12 +39,11 @@ _This project utilizes looping and arrays to scan through an inputted number and
 * Open GitHub site on your browser: https://github.com/CallaRudolph/pingpong
 * Select the dropdown (green box) "Clone or download"
 * Copy the link for the GitHub repository
-* Open Terminal on your computer
-* In Terminal, perform the following steps:
-  * type 'cd desktop' and press enter
-  * type 'git clone' then copy the repository link and press enter
-  * type 'cd pingpong' to access the path on your computer
-  * type 'open index.html' to view the pingpong HTML on your browser
+* Open Terminal on your computer and perform the following steps:
+  * `$ cd desktop`
+  * `$ git clone <paste-repo-url>`
+  * `$ cd pingpong `
+  * `$ open index.html `
 * Input a number (or any character) to see your result!
 
 ## Support and contact details
@@ -48,7 +55,8 @@ If you run into any findings, please email me at the address above!
 * HTML
 * CSS
 * Bootstrap
-* Javascript
+* JavaScript
+* jQuery
 
 ### License
 
